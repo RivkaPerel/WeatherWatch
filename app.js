@@ -5,10 +5,12 @@ const weatherRoutes = require('./routes/weatherRoutes');
 const { fetchAndSaveWeather } = require('./services/weatherService');
 require('dotenv').config();
 const app = express();
+app.use(express.static('public'));
 const PORT = 3000;
 
 const cors = require('cors'); // למעלה עם ה-requires
-app.use(cors()); // מתחת ל-const app = express();
+app.use(cors()); 
+
 
 // חיבור ל-DB
 const mongoURI =process.env.MONGO_URI ;

@@ -1,0 +1,82 @@
+:root {
+    --bg-color: #f0ede5; /* לבן רטרו מעט "מלוכלך" */
+    --primary: #2c3e50;  /* כחול כהה רשמי */
+    --accent: #e67e22;   /* כתום רטרו עדין */
+    --card-bg: #ffffff;
+    --text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 4px double var(--primary);
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 3px solid var(--primary);
+    box-shadow: 8px 8px 0px var(--primary); /* צל קשיח בסגנון רטרו */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.temp-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--accent);
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-update {
+    background: var(--accent);
+    color: white;
+    border: 2px solid var(--primary);
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-update:active {
+    transform: translate(2px, 2px);
+}
