@@ -4,6 +4,7 @@ const weatherSchema = new mongoose.Schema({
     city: String,
     temp: Number,
     description: String,
+    icon: String,
     date: { type: Date, default: Date.now }
 });
 

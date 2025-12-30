@@ -25,7 +25,16 @@
         </div>
         <img id="weather-icon" src="" class="weather-icon-large">
     </section>
+<div class="search-container">
+    <input type="text" id="cityInput" placeholder="הקלידי שם עיר (באנגלית)...">
+    <button onclick="searchCity()">חפשי</button>
+</div>
 
+<div class="chart-container" style="position: relative; height:40vh; width:80vw; margin: auto;">
+    <canvas id="weatherChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <h3>היסטוריית ניטור</h3>
    <div id="history-container" class="history-grid"></div>
         </div>
