@@ -22,7 +22,7 @@ mongoose.connect(mongoURI)
 app.use('/api', weatherRoutes);
 
 // אוטומציה - כל שעה
-cron.schedule('0 * * * *', () => {
+cron.schedule('* * * * *', () => {
     fetchAndSaveWeather();
 });
 
