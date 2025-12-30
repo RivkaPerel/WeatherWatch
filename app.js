@@ -6,7 +6,8 @@ const { fetchAndSaveWeather } = require('./services/weatherService');
 require('dotenv').config();
 const app = express();
 app.use(express.static('public'));
-const PORT = 3000;
+
+const PORT = process.env.PORT || 3000;
 
 const cors = require('cors'); // למעלה עם ה-requires
 app.use(cors()); 
