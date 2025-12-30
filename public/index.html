@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyGuard | ניטור מזג אוויר בזמן אמת</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SkyGuard</h1>
+            <p class="subtitle">מערכת בקרה וניטור אקלים</p>
+        </header>
+<main>
+    <section class="main-card">
+        <div>
+            <h2>מצב נוכחי: <span id="city-name">--</span></h2>
+            <span id="temp" class="temp-display">--°C</span>
+            <p id="description">טוען נתונים...</p>
+            <div class="temp-bar-container">
+                <div id="temp-bar" class="temp-bar-fill"></div>
+            </div>
+            <button onclick="updateWeather()" class="btn-update">דגימה מחדש</button>
+        </div>
+        <img id="weather-icon" src="" class="weather-icon-large">
+    </section>
+
+    <h3>היסטוריית ניטור</h3>
+   <div id="history-container" class="history-grid"></div>
+        </div>
+</main>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
